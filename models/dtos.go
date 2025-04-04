@@ -4,14 +4,14 @@ package models
 // LoginRequest defines the expected structure for the login request body.
 type LoginRequest struct {
     Username string `json:"username"`
-    Password string `json:"password_hash"`
+    Password string `json:"password"`
 }
 
 // RegisterRequest defines the expected structure for the registration request body.
 // For this simple case, it's identical to LoginRequest.
 type RegisterRequest struct {
     Username string `json:"username"`
-    Password string `json:"password_hash"`
+    Password string `json:"password"`
 }
 
 // --- Response Data DTOs ---
